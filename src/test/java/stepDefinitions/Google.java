@@ -46,5 +46,6 @@ public class Google {
     @Then("I should be able to navigate there")
     public void iShouldBeAbleToNavigateThere() {
         googlepage.searchPageTitleValidation();
+        System.out.println("ngrok test");
     }
 }
