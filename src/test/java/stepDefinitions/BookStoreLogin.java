@@ -29,18 +29,30 @@ public class BookStoreLogin {
     }
 
     @When("I enter credentials")
-    public void iEnterCredentials() throws IOException {
+    public void iEnterCredentials() {
         loginPage.loginPositive();
         browserUtils.clickWithJS(loginPage.loginButton);
         loginPage.pageTitle();
     }
 
     @Then("I should be logged in")
-    public void iShouldBeLoggedIn() throws IOException {
-        browserUtils.waitForVisibility(loginPage.UserNameLabel,10);
+    public void iShouldBeLoggedIn() {
         loginPage.assertLoginUserNameLabel();
         browserUtils.scrollToElement(loginPage.logOutButton);
         loginPage.logOut();
         System.out.println("Test Passed");
+    }
+
+
+    @When("I enter negative credentials")
+    public void iEnterNegativeCredentials() {
+        loginPage.loginNegative();
+        browserUtils.clickWithJS(loginPage.loginButton);
+
+    }
+
+    @Then("I should see an error message")
+    public void iShouldSeeAnErrorMessage() {
+        loginPage.assertNegativeLogin();
     }
 }

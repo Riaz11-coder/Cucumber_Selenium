@@ -1,5 +1,5 @@
 Feature: Google test
-  @Google
+  @Google2
   Scenario: Testing Google
     Given I navigate to Google search page
     When  I check page title

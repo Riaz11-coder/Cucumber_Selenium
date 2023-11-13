@@ -3,10 +3,12 @@ package stepDefinitions;
 import cucumber.TestContext;
 import enums.Context;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import pageObjects.BookStorePage;
 import pojo.Book;
@@ -32,9 +34,8 @@ public class BookStoreSearch {
     }
     @When("I enter bookstore")
     public void iEnterBookstore() {
-        browserUtils.clickWithJS(bookStorePage.bookStoreButton);
-
-
+        //browserUtils.clickWithJS(bookStorePage.bookStoreButton);
+        browserUtils.hover(bookStorePage.bookStoreButton);
     }
 
     @And("I search for a book")
@@ -115,5 +116,36 @@ public class BookStoreSearch {
 
 
 
+    }
+
+    @Given("I am in the book Store")
+    public void iAmInTheBookStore() {
+        browserUtils.clickWithJS(bookStorePage.bookStoreButton);
+
+
+
+    }
+
+    @When("I select a book")
+    public void iSelectABook() {
+        bookStorePage.gitPocketGuideBook.click();
+
+    }
+
+    @Then("I am provided details about that book")
+    public void iAmProvidedDetailsAboutThatBook() {
+        bookStorePage.assertBookSelection();
+    }
+
+    @When("I enter keys into the search bar")
+    public void iEnterKeysIntoTheSearchBar() {
+        bookStorePage.bookStorePageSearchBox.sendKeys("Gi");
+        
+    }
+
+    @Then("The book selection should dynamically filter")
+    public void theBookSelectionShouldDynamicallyFilter() {
+        browserUtils.waitForVisibility(By.className("action-buttons"),10);
+        bookStorePage.assertBookFilter();
     }
 }

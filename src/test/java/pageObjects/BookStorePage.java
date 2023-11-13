@@ -1,5 +1,7 @@
 package pageObjects;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,9 +9,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.ExcelUtil;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BookStorePage {
 
     WebDriver driver;
+
 
     ExcelUtil excelUtil = new ExcelUtil();
 
@@ -124,6 +130,66 @@ public class BookStorePage {
         Data[7][1] = "https://demoqa.com/images/bookimage3.jpg";
 
         excelUtil.writeTableToExcel(Data,filePath1);
+
+    }
+
+    public List<String> getElementsText(List<WebElement> list) {
+        List<String> elemTexts = new ArrayList<>();
+        for (WebElement el : list) {
+            elemTexts.add(el.getText());
+        }
+        return elemTexts;
+    }
+
+    public void assertBookSelection(){
+
+        List<WebElement> GitPocketGuideListOfBook = GitPocketGuideWrapper.findElements(By.id("userName-value"));
+
+        List<String> actualListOfDetails = getElementsText(GitPocketGuideListOfBook);
+
+        List<String> expectedListOfDetails = new ArrayList<>();
+
+        String ISBN = "9781449325862";
+        String Title = "Git Pocket Guide";
+        String SubTitle = "A Working Introduction";
+        String Author = "Richard E. Silverman";
+        String Publisher = "O'Reilly Media";
+        String TotalPages = "234";
+        String Description = "This pocket guide is the perfect on-the-job companion to Git, the distributed version control system. It provides a compact, readable introduction to Git for new users, as well as a reference to common commands and procedures for those of you with Git exp";
+        String Website = "http://chimera.labs.oreilly.com/books/1230000000561/index.html";
+
+        expectedListOfDetails.add(ISBN);
+        expectedListOfDetails.add(Title);
+        expectedListOfDetails.add(SubTitle);
+        expectedListOfDetails.add(Author);
+        expectedListOfDetails.add(Publisher);
+        expectedListOfDetails.add(TotalPages);
+        expectedListOfDetails.add(Description);
+        expectedListOfDetails.add(Website);
+
+        System.out.println(actualListOfDetails);
+        System.out.println(expectedListOfDetails);
+
+        Assert.assertEquals(actualListOfDetails,expectedListOfDetails);
+    }
+
+    public void assertBookFilter(){
+
+        List<WebElement> ListOfBookResults = tableOfBooks.findElements(By.className("action-buttons"));
+
+        List<String> actualListOfBooks = getElementsText(ListOfBookResults);
+
+        List<String> expectedListOfBooks = new ArrayList<>();
+
+        String Title = "Git Pocket Guide";
+
+        expectedListOfBooks.add(Title);
+
+        System.out.println(actualListOfBooks);
+        System.out.println(expectedListOfBooks);
+
+        Assert.assertEquals(actualListOfBooks,expectedListOfBooks);
+
 
     }
 

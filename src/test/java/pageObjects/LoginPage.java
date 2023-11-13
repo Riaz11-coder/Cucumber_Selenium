@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.BrowserUtils;
 
 import java.util.Date;
 import java.util.Set;
@@ -18,9 +19,12 @@ public class LoginPage {
 
 
 
+
+
     public LoginPage(WebDriver driver){
         this.driver = driver;
         PageFactory.initElements(driver,this);
+
     }
     @FindBy(css = "input[placeholder='UserName']")
     public WebElement userName;
@@ -32,6 +36,9 @@ public class LoginPage {
     public WebElement logOutButton;
     @FindBy(css = "label[id='userName-value']")
     public WebElement UserNameLabel;
+
+    @FindBy(css = "p[id='name']")
+    public WebElement loginErrorMessage;
 
     public void NavigateToBookStoreHomePage(){
         driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
@@ -46,6 +53,21 @@ public class LoginPage {
         userName.sendKeys(FileReaderManager.getInstance().getConfigReader().getProperty("username"));
         password.sendKeys(FileReaderManager.getInstance().getConfigReader().getProperty("password"));
     }
+
+    public void loginNegative(){
+        userName.sendKeys(FileReaderManager.getInstance().getConfigReader().getProperty("NegUsername"));
+        password.sendKeys(FileReaderManager.getInstance().getConfigReader().getProperty("NegPassword"));
+    }
+
+    public void assertNegativeLogin(){
+
+        String expectedErrorMessage = "Invalid username or password!";
+        String actualErrorMessage = loginErrorMessage.getText();
+
+        Assert.assertEquals(actualErrorMessage,expectedErrorMessage);
+    }
+
+
 
     public void assertLoginUserNameLabel(){
         String actualUsernameLabel = UserNameLabel.getText();

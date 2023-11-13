@@ -37,4 +37,14 @@ public class Google {
 
     }
 
+    @When("I search for a web site")
+    public void iSearchForAWebSite() {
+        googlepage.searchGoogle("porsche");
+        
+    }
+
+    @Then("I should be able to navigate there")
+    public void iShouldBeAbleToNavigateThere() {
+        googlepage.searchPageTitleValidation();
+    }
 }
