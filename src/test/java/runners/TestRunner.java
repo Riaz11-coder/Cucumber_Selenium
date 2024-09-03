@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/functionalTests",
+        features = {"src/test/resources/functionalTests","src/test/resources/jiraFeatureFile"},
         glue= {"stepDefinitions"},
         plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
                 "junit:target/cucumber-reports/Cucumber.xml",
@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
         dryRun = false,
-        tags = "@Parallel"
+        tags = "@BookList"
 )
 public class TestRunner {
 }

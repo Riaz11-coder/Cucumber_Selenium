@@ -17,6 +17,62 @@
     <build>
         <plugins>
             <plugin>
+            <groupId>com.assertthat.plugins</groupId>
+            <artifactId>assertthat-bdd-maven-plugin</artifactId>
+            <version>1.7.1</version>
+            <configuration>
+            <projectId>
+                10000
+            </projectId>
+            <!--Optional can be supplied as environment variable ASSERTTHAT_ACCESS_KEY -->
+            <accessKey>
+                73b34d93eec4f86854decdf540a27bf10dc4dbc79fb6b8ad6dd111b167346cd5
+            </accessKey>
+            <!--Optional can be supplied as environment variable ASSERTTHAT_SECRET_KEY -->
+            <secretKey>
+                771c8da980fdfe416a7b3e5c42c21bbf5e7cf47913fc47e046e4008f19ac39cc
+            </secretKey>
+
+
+            </configuration>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <outputFolder>src/test/resources/jiraFeatureFile</outputFolder>
+                            <jql>key=EL-24</jql>
+                            <mode>automated</mode>
+                            <tags>@Booklist</tags>
+                            <enabled>true</enabled>
+                        </configuration>
+                        <id>features</id>
+                        <goals>
+                            <goal>features</goal>
+                        </goals>
+                        <phase>generate-test-resources</phase>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <phase>test</phase>
+                        <configuration>
+                            <!--Optional - default ./report-->
+                            <jsonReportFolder>target/cucumber-reports</jsonReportFolder>
+                            <!--Optional - default - **/*.json -->
+                            <jsonReportIncludePattern>**/Cucumber.json</jsonReportIncludePattern>
+                            <!--Optional - default cucumber (can be one of: cucumber/karate)-->
+
+                            <type>cucumber</type>
+                            <jql>key=EL-24</jql>
+                            <enabled>true</enabled>
+                        </configuration>
+
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
@@ -143,7 +199,8 @@
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
-            <version>5.5.3</version>
+            <version>5.8.0</version>
+
         </dependency>
 
         <dependency>
