@@ -11,12 +11,12 @@ pipeline {
 
                 // API Layer Repository
                 dir('ApiLayer') {
-                    git url: 'https://github.com/Riaz11-coder/CucumberAPITest.git', branch: 'main'
+                    git url: 'https://github.com/Riaz11-coder/CucumberAPITest', branch: 'main'
                 }
 
                 // Database Layer Repository
                 dir('DatabaseLayer') {
-                    git url: 'https://github.com/Riaz11-coder/BookStoreDatabase.git', branch: 'main'
+                    git url: 'https://github.com/Riaz11-coder/BookStoreDatabase', branch: 'main'
                 }
             }
         }
