@@ -23,7 +23,7 @@ pipeline {
 
         stage('Build and Test UI Layer') {
             steps {
-                sh 'mvn clean install surefire:test@parallel-execution'  // Changed from 'mvn clean install' to ensure tests are run
+                sh 'mvn surefire:test@parallel-execution'  // Changed from 'mvn clean install' to ensure tests are run
             }
             post {
                 always {
