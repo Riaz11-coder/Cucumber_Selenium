@@ -48,7 +48,7 @@ pipeline {
         stage('Build and Test Database Layer') {
             steps {
                 dir('DatabaseLayer') {
-                    sh 'mvn clean test'  // Changed from 'mvn clean install' to ensure tests are run
+                    sh 'mvn test'  // Changed from 'mvn clean install' to ensure tests are run
                 }
             }
             post {
