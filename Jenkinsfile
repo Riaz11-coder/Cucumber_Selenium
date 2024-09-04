@@ -3,11 +3,6 @@ pipeline {
     tools {
         maven 'Maven_3'
     }
-    options {
-           cache(maxCacheSize: 250, caches: [
-                [$class: 'MavenCacheBuilder', path: '${HOME}/.m2/repository']
-            ])
-        }
     stages {
         stage('Checkout Repos') {
             steps {
