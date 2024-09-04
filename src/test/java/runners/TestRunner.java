@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
         dryRun = false,
-        tags = "@Google2"
+        tags = "@Parallel"
 )
 public class TestRunner {
 }
