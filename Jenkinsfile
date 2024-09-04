@@ -3,6 +3,11 @@ pipeline {
     tools {
         maven 'Maven_3'
     }
+    options {
+           cache(maxCacheSize: 250, caches: [
+                [$class: 'MavenCacheBuilder', path: '${HOME}/.m2/repository']
+            ])
+        }
     stages {
         stage('Checkout Repos') {
             steps {
@@ -23,11 +28,14 @@ pipeline {
 
         stage('Build and Test UI Layer') {
             steps {
-                sh 'mvn clean test'  // Changed from 'mvn clean install' to ensure tests are run
+                sh 'mvn clean install surefire:test@parallel-execution'  // Changed from 'mvn clean install' to ensure tests are run
             }
             post {
                 always {
                     junit '**/target/surefire-reports/*.xml'
+                    cucumber buildStatus: 'UNSTABLE',
+                    fileIncludePattern: '**/cucumber.json',
+                    jsonReportDirectory: 'target'
                 }
             }
         }
@@ -48,7 +56,7 @@ pipeline {
         stage('Build and Test Database Layer') {
             steps {
                 dir('DatabaseLayer') {
-                    sh 'mvn test'  // Changed from 'mvn clean install' to ensure tests are run
+                    sh 'mvn clean test'  // Changed from 'mvn clean install' to ensure tests are run
                 }
             }
             post {
@@ -57,6 +65,14 @@ pipeline {
                 }
             }
         }
+        stage('Generate Cucumber Reports') {
+                   steps {
+                       cucumber buildStatus: 'UNSTABLE',
+                                fileIncludePattern: '**/cucumber.json',
+                                jsonReportDirectory: 'target'
+                    }
+
+         }
     }
 
     post {
