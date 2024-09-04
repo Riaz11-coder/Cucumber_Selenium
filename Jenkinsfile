@@ -23,7 +23,9 @@ pipeline {
 
         stage('Build and Test UI Layer') {
             steps {
-                sh 'mvn clean test'  // Changed from 'mvn clean install' to ensure tests are run
+                   catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                       sh 'mvn clean test'
+                   }
             }
             post {
                 always {
@@ -37,9 +39,11 @@ pipeline {
 
         stage('Build and Test API Layer') {
             steps {
-                dir('ApiLayer') {
-                    sh 'mvn clean test'  // Changed from 'mvn clean install' to ensure tests are run
-                }
+                    catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                        dir('ApiLayer') {
+                            sh 'mvn clean test'
+                        }
+                    }
             }
             post {
                 always {
@@ -50,9 +54,11 @@ pipeline {
 
         stage('Build and Test Database Layer') {
             steps {
-                dir('DatabaseLayer') {
-                    sh 'mvn clean test'  // Changed from 'mvn clean install' to ensure tests are run
-                }
+                    catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                        dir('DatabaseLayer') {
+                            sh 'mvn clean test'
+                        }
+                    }
             }
             post {
                 always {
