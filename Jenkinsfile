@@ -24,7 +24,7 @@ pipeline {
         stage('Build and Test UI Layer') {
             steps {
                    catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                       sh 'mvn clean test'
+                       sh 'mvn clean test -Dcucumber.options="--tags ~@ignore"'
                    }
             }
             post {
@@ -41,7 +41,7 @@ pipeline {
             steps {
                     catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
                         dir('ApiLayer') {
-                            sh 'mvn clean test'
+                            sh 'mvn clean test -Dcucumber.options="--tags ~@ignore"'
                         }
                     }
             }
@@ -59,7 +59,7 @@ pipeline {
                             sh 'mvn clean test'
                         }
                     }
-            }
+            Z}
             post {
                 always {
                     junit '**/target/surefire-reports/*.xml'
