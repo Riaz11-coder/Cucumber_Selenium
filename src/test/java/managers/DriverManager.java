@@ -49,6 +49,13 @@ public class DriverManager {
                 break;
             case REMOTE : driver = createRemoteDriver();
                 break;
+            case BROWSERSTACK:
+                try{
+                    driver = createBrowserStackDriver();
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
+                }
+                break;
         }
         return driver;
     }
@@ -107,6 +114,26 @@ public class DriverManager {
         if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize()) driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);
         return driver;
+    }
+
+    private WebDriver createBrowserStackDriver() throws MalformedURLException {
+        String username = System.getProperty("browserstack.username");
+        String accessKey = System.getProperty("browserstack.access_key");
+        String buildName = "";
+        String projectName = "";
+
+        DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setCapability("browser",System.getProperty("browserstack.browser"));
+        caps.setCapability("browser_version", System.getProperty("browserstack.browser_version"));
+        caps.setCapability("os", System.getProperty("browserstack.os"));
+        caps.setCapability("os_version", System.getProperty("browserstack.os_version"));
+        caps.setCapability("resolution", System.getProperty("browserstack.resolution"));
+        caps.setCapability("project", projectName);
+        caps.setCapability("build", buildName);
+        caps.setCapability("name", "Your Test Name");
+
+        URL browserStackUrl = new URL("https://" + username + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub");
+        return new RemoteWebDriver(browserStackUrl, caps);
     }
     public void closeDriver() {
 

@@ -2,7 +2,12 @@ package runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -14,7 +19,20 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         monochrome = true,
         dryRun = false,
-        tags = ""
+        tags = "@Login"
 )
 public class TestRunner {
+    @BeforeClass
+    public static void setup() {
+        Properties props = new Properties();
+        try {
+            props.load(new FileInputStream("configs/Configuration.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        for (String key : props.stringPropertyNames()) {
+            System.setProperty(key, props.getProperty(key));
+        }
+    }
 }
