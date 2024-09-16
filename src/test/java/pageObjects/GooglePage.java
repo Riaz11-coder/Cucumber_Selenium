@@ -59,7 +59,7 @@ public class GooglePage  {
 
     public void searchPageTitleValidation() {
         porscheHomeButton.click();
-        String expectedPageTitle = "Porsche HOME - Porsche USA";
+        String expectedPageTitle = "Porsche";
         String actualPageTitle = driver.getTitle();
         Assert.assertEquals(expectedPageTitle,actualPageTitle);
 

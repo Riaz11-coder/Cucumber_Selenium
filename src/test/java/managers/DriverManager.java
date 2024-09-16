@@ -1,5 +1,6 @@
 package managers;
 
+import dataProvider.ConfigFileReader;
 import enums.DriverType;
 import enums.EnvironmentType;
 import io.cucumber.java.Scenario;
@@ -18,6 +19,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
@@ -117,20 +119,31 @@ public class DriverManager {
     }
 
     private WebDriver createBrowserStackDriver() throws MalformedURLException {
-        String username = System.getProperty("browserstack.username");
-        String accessKey = System.getProperty("browserstack.access_key");
-        String buildName = "";
-        String projectName = "";
+        String username = FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.username");
+        String accessKey = FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.access_key");
+        String buildNumber = System.getenv("BUILD_NUMBER");
+        String buildName = "Build_" + (buildNumber != null ? buildNumber : "Local_" + System.currentTimeMillis());
+        String projectName = "Cucumber-Selenium";
 
         DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("browser",System.getProperty("browserstack.browser"));
-        caps.setCapability("browser_version", System.getProperty("browserstack.browser_version"));
-        caps.setCapability("os", System.getProperty("browserstack.os"));
-        caps.setCapability("os_version", System.getProperty("browserstack.os_version"));
-        caps.setCapability("resolution", System.getProperty("browserstack.resolution"));
+        caps.setCapability("deviceName",FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.device"));
+        caps.setCapability("browser",FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.browser3"));
+        caps.setCapability("browser_version", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.browser_version"));
+        caps.setCapability("os", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.os3"));
+        caps.setCapability("os_version", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.os_version5"));
+        caps.setCapability("resolution", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.resolution"));
         caps.setCapability("project", projectName);
         caps.setCapability("build", buildName);
-        caps.setCapability("name", "Your Test Name");
+        caps.setCapability("name", "BrowserStack-test");
+        caps.setCapability("browserstack.debug",true);
+        HashMap<String, Boolean> networkLogsOptions = new HashMap<>();
+        networkLogsOptions.put("captureContent", true);
+        caps.setCapability("browserstack.networkLogs", true);
+        caps.setCapability("browserstack.networkLogsOptions", networkLogsOptions);
+        caps.setCapability("browserstack.console","verbose");
+        caps.setCapability("browserstack.video",true);
+        caps.setCapability("browserstack.selfHeal", true);
+
 
         URL browserStackUrl = new URL("https://" + username + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub");
         return new RemoteWebDriver(browserStackUrl, caps);

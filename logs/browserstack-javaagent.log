@@ -219,3 +219,694 @@
 	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
 	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
 
+18:11:01.620 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+18:11:01.623 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:11:01.846 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:11:01.848 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+18:11:01.848 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+18:11:01.849 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+18:23:10.344 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+18:23:10.346 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:23:10.578 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:23:10.580 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+18:23:10.581 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+18:23:10.582 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+18:23:54.754 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+18:23:54.756 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:23:54.932 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:23:54.934 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+18:23:54.934 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+18:23:54.936 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+16:12:57.215 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+16:12:57.218 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+16:12:57.432 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:12:57.434 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+16:12:57.434 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+16:12:57.435 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+16:14:49.716 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+16:14:49.719 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+16:14:49.922 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+16:14:49.923 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+16:14:49.924 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+16:14:49.924 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:09:24.118 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:09:24.121 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:09:24.321 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:09:24.323 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:09:24.323 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:09:24.324 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:09:58.583 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:09:58.586 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:09:58.754 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:09:58.756 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:09:58.756 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:09:58.757 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:10:41.118 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:10:41.121 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:10:41.297 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:10:41.299 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:10:41.299 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:10:41.300 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:39:54.509 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:39:54.513 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:39:54.733 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:39:54.734 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:39:54.734 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:39:54.735 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:40:24.526 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:40:24.528 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:40:24.729 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:40:24.731 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:40:24.731 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:40:24.732 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:40:50.998 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:40:51.000 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:40:51.195 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:40:51.197 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:40:51.197 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:40:51.198 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:50:21.354 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:50:21.357 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:50:21.577 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:50:21.579 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:50:21.579 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:50:21.580 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:54:51.391 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:54:51.394 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:54:51.607 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:54:51.609 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:54:51.609 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:54:51.610 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:56:36.436 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:56:36.439 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:56:36.649 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:56:36.651 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:56:36.651 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:56:36.652 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:57:17.120 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:57:17.122 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:57:17.321 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:57:17.323 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:57:17.323 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:57:17.324 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:57:38.295 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:57:38.297 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:57:38.507 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:57:38.509 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:57:38.509 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:57:38.510 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+11:58:28.557 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:58:28.560 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:58:28.770 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+11:58:28.772 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+11:58:28.772 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+11:58:28.773 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:00:04.428 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:00:04.431 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:00:04.650 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:00:04.652 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+12:00:04.652 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+12:00:04.653 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:01:27.537 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:01:27.539 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:01:27.720 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:01:27.722 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+12:01:27.722 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+12:01:27.723 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:02:19.836 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:02:19.839 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:02:20.020 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:02:20.022 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+12:02:20.022 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+12:02:20.024 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:08:58.418 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:08:58.421 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:08:58.629 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:08:58.631 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+12:08:58.631 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+12:08:58.632 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:09:41.988 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:09:41.991 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:09:42.190 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:09:42.191 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+12:09:42.191 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+12:09:42.192 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:11:11.817 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:11:11.820 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:11:12.034 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:11:12.035 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /browserstack.yml
+12:11:12.035 [main] ERROR c.b.config.BrowserStackConfig - [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+12:11:12.036 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - java.lang.RuntimeException: [Invalid Path] Config file does not exist at any parent directory of /Users/riazahmed/IdeaProjects/Cucumber_Selenium. Please include a browserstack.yml/browserstack.yaml file containing configuration for tests.
+	at com.browserstack.config.BrowserStackConfig.getInstance(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+
+12:35:08.367 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:35:08.371 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:35:08.585 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:35:08.587 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:35:09.498 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to java
+12:35:11.347 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:35:11.650 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:35:15.073 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:35:25.051 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:35:25.051 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:35:25.051 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:35:25.056 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:35:25.056 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:35:25.056 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:35:26.950 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:35:26.955 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:35:26.959 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:35:26.993 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:35:26.993 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:35:26.993 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:45:26.408 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:45:26.412 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:45:26.603 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:45:26.604 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:45:27.571 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to java
+12:45:29.443 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:45:29.717 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:45:29.999 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:45:34.470 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:45:34.471 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:45:34.470 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:45:34.474 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:45:34.474 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:45:34.474 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:45:36.345 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:45:36.347 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:45:36.354 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:45:36.382 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:45:36.382 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:45:36.394 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:45:44.528 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/f7389495aede5b1652375361a69ca83373299040
+12:45:44.529 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:46:18.460 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/72e69e2e50ba75539e6e11b1dcde8aa4c76491d8
+12:46:18.460 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:50:52.656 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:50:52.658 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:50:52.839 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:50:52.841 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:50:53.764 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to java
+12:50:55.572 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:50:55.813 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:50:56.047 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:51:00.456 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:51:00.456 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:51:00.457 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:51:00.459 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:51:00.460 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:51:00.460 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:51:02.239 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:51:02.243 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:51:02.259 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:51:02.275 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:51:02.277 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:51:02.293 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:51:48.029 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/62183742c9989830b8a9b8350ae8c8ef279808ff
+12:51:48.029 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:52:49.613 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:52:49.615 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:52:49.794 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:52:49.796 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:52:50.633 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to java
+12:52:52.473 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:52:52.773 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:52:53.104 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+12:52:57.386 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:52:57.393 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:52:57.391 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:52:57.396 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:52:57.397 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+12:52:57.402 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+12:52:59.240 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:52:59.241 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:52:59.274 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:52:59.274 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:52:59.288 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+12:52:59.330 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+12:53:46.505 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/f12a6490d8483d967cbcf8feaa5b057a90191ddf
+12:53:46.505 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:22:12.666 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+13:22:12.669 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:22:12.878 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:22:12.879 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:22:13.862 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to java
+13:22:15.745 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+13:22:16.044 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:22:16.489 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:22:20.976 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:22:20.976 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:22:20.977 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:22:20.981 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:22:20.981 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:22:20.982 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:22:22.928 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:22:22.935 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:22:22.948 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:22:22.970 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+13:22:22.970 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+13:22:22.980 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is java. We currently support frameworks testng, cucumber-testng & serenity
+13:23:13.038 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/779c696da99f64a049d79a6f01c4080b317bf1a2
+13:23:13.039 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:41:55.300 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+13:41:55.303 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:41:55.515 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:41:55.516 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:41:56.324 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+13:41:58.909 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:41:59.977 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:41:59.979 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:41:59.982 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:41:59.981 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:41:59.983 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:41:59.986 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:42:02.316 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:42:02.346 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:42:02.379 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:42:50.934 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/88e928bfa2790d2b6f7d372e661cee0376bfb9cb
+13:42:50.934 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:46:13.310 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+13:46:13.313 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:46:13.520 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:46:13.521 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:46:14.507 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+13:46:16.778 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:46:17.106 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:46:21.488 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:46:21.488 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:46:21.488 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:46:21.492 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:46:21.492 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:46:21.492 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:46:23.342 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:46:23.343 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:46:23.356 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:47:12.382 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/121c63669f36d6e76344c1237c1ca9e893231e18
+13:47:12.383 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+13:54:00.748 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+13:54:00.750 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:54:00.933 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:54:00.935 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:54:01.746 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+13:54:03.970 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:54:05.044 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:54:05.044 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:54:05.046 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:54:05.049 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:54:05.050 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:54:05.051 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:54:06.930 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:54:06.934 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:54:06.957 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:55:21.614 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+13:55:21.617 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+13:55:21.781 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:55:21.782 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:55:22.568 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+13:55:24.703 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:55:24.884 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+13:55:29.116 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:55:29.117 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:55:29.118 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+13:55:29.120 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:55:29.120 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:55:29.121 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+13:55:31.015 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:55:31.016 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+13:55:31.055 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:00:16.755 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:00:16.758 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:00:17.019 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:00:17.021 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:00:17.957 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:00:20.088 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:00:20.380 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:00:24.717 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:00:24.719 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:00:24.719 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:00:24.722 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:00:24.724 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:00:24.723 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:00:26.574 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:00:26.574 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:00:26.592 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:01:10.519 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:01:10.521 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:01:10.695 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:01:10.697 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:01:11.538 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:01:13.674 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:01:13.951 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:01:18.010 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:01:18.012 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:01:18.016 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:01:18.018 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:01:18.017 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:01:18.022 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:01:20.010 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:01:20.047 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:01:20.047 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:02:08.305 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/5a155e67fb800c3e668099bd824f887cb5b00d39
+14:02:08.306 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:03:43.102 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:03:43.105 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:03:43.276 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:03:43.278 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:03:44.272 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:03:46.271 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:03:46.535 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:03:50.720 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:03:50.720 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:03:50.720 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:03:50.723 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:03:50.723 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:03:50.723 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:03:52.535 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:03:52.538 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:03:52.596 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:05:02.571 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/ad667d4bd796770c74303420cbb5adacf8ab3d32
+14:05:02.572 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:09:22.575 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:09:22.578 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:09:22.801 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:09:22.802 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:09:23.674 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:09:25.816 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:09:26.088 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:09:30.177 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:09:30.176 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:09:30.182 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:09:30.179 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:09:30.182 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:09:30.184 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:09:32.069 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:09:32.119 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:09:32.132 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:10:47.563 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/206e47e2b514ac36011b46e941c5673ec8a8b34d
+14:10:47.564 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:21:43.763 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:21:43.766 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:21:43.968 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:21:43.970 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:21:44.900 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:21:47.172 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:21:47.414 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:21:51.637 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:21:51.641 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:21:51.649 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:21:51.651 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:21:51.654 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:21:51.655 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:21:53.529 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:21:53.542 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:21:53.542 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:23:01.678 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/0c3fdb9227199fc8b097a35023270adf26d2867d
+14:23:01.678 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:33:22.477 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:33:22.480 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:33:22.741 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:33:22.743 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:33:23.796 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:33:26.121 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:33:26.387 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:33:30.953 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:33:30.954 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:33:30.954 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:33:30.958 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:33:30.958 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:33:30.959 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:33:32.892 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:33:32.978 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:33:32.979 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:33:58.608 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:33:58.611 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:33:58.784 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:33:58.786 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:33:59.607 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+14:34:01.461 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:34:01.660 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+14:34:05.763 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:34:05.763 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:34:05.765 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+14:34:05.767 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:34:05.767 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:34:05.768 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+14:34:07.757 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:34:07.760 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:34:07.805 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+14:34:44.870 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/446ecb96d50940f2c095387f371136edc0e6e4ef
+14:34:44.871 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:35:15.503 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/5b04e1f5c7faeb557d47d9eb78e06cd126a83406
+14:35:15.503 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
