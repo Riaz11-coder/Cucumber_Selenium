@@ -58,13 +58,17 @@
                 <configuration>
                     <includes>
                         <include>**/*TestRunner*.java</include>
-                    </includes><!--suppress UnresolvedMavenProperty -->
+                    </includes><argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
                     <parallel>classesAndMethods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
                 </configuration>
                 </execution>
                 </executions>
-            </plugin>
+            <dependencies><dependency>
+<groupId>org.apache.maven.surefire</groupId>
+<artifactId>surefire-junit47</artifactId>
+<version>3.0.0-M5</version>
+</dependency></dependencies></plugin>
 
             <plugin>
                 <groupId>net.masterthought</groupId>
@@ -221,6 +225,12 @@
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>5.0.9</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.29</version>
         </dependency>
 
     </dependencies>

@@ -13,19 +13,16 @@ public class PageObjectManager {
 
     private BrowserUtils browserUtils;
     private GooglePage googlePage;
-
     private LoginPage loginPage;
-
     private BookStorePage bookStorePage;
-
-    public BookStorePage getBookStorePage() {
-        return (bookStorePage == null) ? bookStorePage = new BookStorePage(driver) : bookStorePage;
-    }
 
     public PageObjectManager(WebDriver driver) {
                 this.driver = driver;
     }
 
+    public BookStorePage getBookStorePage() {
+        return (bookStorePage == null) ? bookStorePage = new BookStorePage(driver) : bookStorePage;
+    }
     public GooglePage getGooglePage(){
         return (googlePage == null) ? googlePage = new GooglePage(driver) : googlePage;
     }

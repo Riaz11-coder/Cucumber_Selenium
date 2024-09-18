@@ -16,7 +16,7 @@ public class Google {
     BrowserUtils browserUtils;
 
     public Google(TestContext context){
-        testContext = context;
+        testContext = TestContext.getInstance();
         googlepage = testContext.getPageObjectManager().getGooglePage();
         browserUtils = testContext.getPageObjectManager().getBrowserUtils();
     }

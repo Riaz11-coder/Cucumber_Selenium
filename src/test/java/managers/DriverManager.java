@@ -1,91 +1,80 @@
 package managers;
 
-import dataProvider.ConfigFileReader;
 import enums.DriverType;
 import enums.EnvironmentType;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.Platform;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import dataProvider.YamlConfigReader;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
-import java.util.concurrent.TimeUnit;
+import java.util.List;
+import java.util.Map;
 
 public class DriverManager {
-    private WebDriver driver;
+    private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
     private static DriverType driverType;
     private static EnvironmentType environmentType;
+    private YamlConfigReader yamlConfigReader;
 
 
     public DriverManager() {
         driverType = FileReaderManager.getInstance().getConfigReader().getBrowser();
         environmentType = FileReaderManager.getInstance().getConfigReader().getEnvironment();
+        yamlConfigReader = new YamlConfigReader();
     }
 
-    public void getScreenShot(Scenario scenario){
-
-        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        scenario.attach(screenshot, "image/png", scenario.getName());
-
+    public void getScreenShot(Scenario scenario) {
+        WebDriver webDriver = getDriver();
+        if (webDriver instanceof TakesScreenshot) {
+            byte[] screenshot = ((TakesScreenshot) webDriver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(screenshot, "image/png", scenario.getName());
+        }
     }
 
     public WebDriver getDriver() {
-        if(driver == null) driver = createDriver();
-        return driver;
+        if (driver.get() == null) {
+            driver.set(createDriver());
+        }
+        return driver.get();
     }
 
     private WebDriver createDriver() {
+        logger.info("Creating driver for environment: {}", environmentType);
         switch (environmentType) {
-            case LOCAL : driver = createLocalDriver();
-                break;
-            case REMOTE : driver = createRemoteDriver();
-                break;
+            case LOCAL:
+                return createLocalDriver();
+            case REMOTE:
+                return createRemoteDriver();
             case BROWSERSTACK:
-                try{
-                    driver = createBrowserStackDriver();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
-                break;
+                return createBrowserStackDriver();
+            default:
+                throw new RuntimeException("Unsupported environment type: " + environmentType);
         }
-        return driver;
     }
 
+
     private WebDriver createRemoteDriver() {
-        DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-        desiredCapabilities.setJavascriptEnabled(true);
-        desiredCapabilities.setCapability("platform", Platform.ANY);
-
-        switch (driverType) {
-            case REMOTECHROME:
-                desiredCapabilities.setBrowserName(BrowserType.CHROME);
-                desiredCapabilities.setCapability("chromeOptions", createChromeOptions(true));
-                break;
-            case REMOTEFIREFOX:
-                desiredCapabilities.setBrowserName(BrowserType.FIREFOX);
-                desiredCapabilities.setCapability("marionette", true);
-                break;
-            default:
-                throw new RuntimeException("Invalid driver type");
-        }
-
+        logger.info("Creating remote driver");
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName(driverType.toString().toLowerCase());
         try {
-            return new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), desiredCapabilities);
+            return new RemoteWebDriver(new URL(FileReaderManager.getInstance().getConfigReader().getRemoteUrl()), capabilities);
         } catch (MalformedURLException e) {
-            throw new RuntimeException("Invalid URL for remote webDriver", e);
+            throw new RuntimeException("Invalid remote WebDriver URL", e);
         }
-
     }
 
     private ChromeOptions createChromeOptions(boolean headless) {
@@ -99,58 +88,54 @@ public class DriverManager {
 
 
     private WebDriver createLocalDriver() {
+        logger.info("Creating local driver for browser: {}", driverType);
         switch (driverType) {
-
-            case FIREFOX :
+            case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
-                driver= new FirefoxDriver();
-                break;
-            case CHROME :
+                return new FirefoxDriver();
+            case CHROME:
                 WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
-                break;
-            case INTERNETEXPLORER : driver = new InternetExplorerDriver();
-                break;
+                return new ChromeDriver();
+            case EDGE:
+                WebDriverManager.edgedriver().setup();
+                return new EdgeDriver();
+            default:
+                throw new RuntimeException("Unsupported driver type: " + driverType);
         }
-
-        if(FileReaderManager.getInstance().getConfigReader().getBrowserWindowSize()) driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(FileReaderManager.getInstance().getConfigReader().getImplicitlyWait(), TimeUnit.SECONDS);
-        return driver;
     }
+    private WebDriver createBrowserStackDriver() {
 
-    private WebDriver createBrowserStackDriver() throws MalformedURLException {
-        String username = FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.username");
-        String accessKey = FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.access_key");
-        String buildNumber = System.getenv("BUILD_NUMBER");
-        String buildName = "Build_" + (buildNumber != null ? buildNumber : "Local_" + System.currentTimeMillis());
-        String projectName = "Cucumber-Selenium";
+        List<Map<String, Object>> allPlatforms = yamlConfigReader.getAllPlatforms();
+        Map<String, Object> platform = allPlatforms.get(0);
 
-        DesiredCapabilities caps = new DesiredCapabilities();
-        caps.setCapability("deviceName",FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.device"));
-        caps.setCapability("browser",FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.browser3"));
-        caps.setCapability("browser_version", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.browser_version"));
-        caps.setCapability("os", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.os3"));
-        caps.setCapability("os_version", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.os_version5"));
-        caps.setCapability("resolution", FileReaderManager.getInstance().getConfigReader().getProperty("browserstack.resolution"));
-        caps.setCapability("project", projectName);
-        caps.setCapability("build", buildName);
-        caps.setCapability("name", "BrowserStack-test");
-        caps.setCapability("browserstack.debug",true);
-        HashMap<String, Boolean> networkLogsOptions = new HashMap<>();
-        networkLogsOptions.put("captureContent", true);
-        caps.setCapability("browserstack.networkLogs", true);
-        caps.setCapability("browserstack.networkLogsOptions", networkLogsOptions);
-        caps.setCapability("browserstack.console","verbose");
-        caps.setCapability("browserstack.video",true);
-        caps.setCapability("browserstack.selfHeal", true);
+        MutableCapabilities capabilities = new MutableCapabilities();
+        capabilities.setCapability("browserName", platform.get("browserName"));
+        capabilities.setCapability("browserVersion", platform.get("browserVersion"));
+        capabilities.setCapability("os", platform.get("os"));
+        capabilities.setCapability("osVersion", platform.get("osVersion"));
 
 
-        URL browserStackUrl = new URL("https://" + username + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub");
-        return new RemoteWebDriver(browserStackUrl, caps);
+        HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
+        browserstackOptions.put("userName", yamlConfigReader.getUserName());
+        browserstackOptions.put("accessKey", yamlConfigReader.getAccessKey());
+        browserstackOptions.put("projectName", yamlConfigReader.getProjectName());
+        browserstackOptions.put("buildName", yamlConfigReader.getBuildName());
+        browserstackOptions.put("sessionName", "BStack-[CucumberSelenium] CrossBrowserTest");
+        capabilities.setCapability("bstack:options", browserstackOptions);
+
+        try {
+            return new RemoteWebDriver(
+                    new URL("https://hub-cloud.browserstack.com/wd/hub"), capabilities);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException("Failed to create BrowserStack driver", e);
+        }
     }
     public void closeDriver() {
-
-        driver.quit();
+        WebDriver webDriver = driver.get();
+        if (webDriver != null) {
+            logger.info("Closing driver");
+            webDriver.quit();
+            driver.remove();
+        }
     }
-
 }
