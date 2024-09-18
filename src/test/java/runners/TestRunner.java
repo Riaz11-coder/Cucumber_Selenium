@@ -27,16 +27,19 @@ public class TestRunner {
     @BeforeClass
     public static void setup() {
         String environment = System.getProperty("environment", "local");
-
+        System.out.println("Current environment: " + environment);
         if ("browserstack".equalsIgnoreCase(environment)) {
             loadBrowserstackConfig();
         } else {
             loadDefaultConfig();
         }
+
+        System.setProperty("environment", environment);
     }
 
     private static void loadDefaultConfig() {
         loadPropertiesFile("configs/Configuration.properties");
+        System.out.println("Loaded environment: " + System.getProperty("environment"));
     }
 
     private static void loadBrowserstackConfig() {

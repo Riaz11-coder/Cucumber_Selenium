@@ -58,17 +58,16 @@
                 <configuration>
                     <includes>
                         <include>**/*TestRunner*.java</include>
-                    </includes><argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
+                    </includes><!--suppress UnresolvedMavenProperty -->
+                    <argLine>-javaagent:"${com.browserstack:browserstack-java-sdk:jar}"</argLine>
                     <parallel>classesAndMethods</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
                 </configuration>
                 </execution>
                 </executions>
-            <dependencies><dependency>
-<groupId>org.apache.maven.surefire</groupId>
-<artifactId>surefire-junit47</artifactId>
-<version>3.0.0-M5</version>
-</dependency></dependencies></plugin>
+            <dependencies>
+
+</dependencies></plugin>
 
             <plugin>
                 <groupId>net.masterthought</groupId>

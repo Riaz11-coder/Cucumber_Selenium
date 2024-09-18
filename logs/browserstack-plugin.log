@@ -433,3 +433,126 @@
 00:42:22.169 [ApplicationImpl pooled thread 5902] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
 00:42:22.169 [ApplicationImpl pooled thread 5902] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
 00:42:22.169 [ApplicationImpl pooled thread 5902] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+00:47:49.619 [ApplicationImpl pooled thread 5903] INFO  c.b.l.BrowserStackRunExtension - junit
+00:47:49.619 [ApplicationImpl pooled thread 5903] INFO  com.browserstack.utils.Helpers - true
+00:47:49.619 [ApplicationImpl pooled thread 5903] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+00:47:49.619 [ApplicationImpl pooled thread 5903] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+00:47:49.619 [ApplicationImpl pooled thread 5903] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+00:47:49.619 [ApplicationImpl pooled thread 5903] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:01:59.339 [ApplicationImpl pooled thread 5925] INFO  c.b.l.BrowserStackRunExtension - junit
+01:01:59.340 [ApplicationImpl pooled thread 5925] INFO  com.browserstack.utils.Helpers - true
+01:01:59.340 [ApplicationImpl pooled thread 5925] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:01:59.340 [ApplicationImpl pooled thread 5925] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:01:59.340 [ApplicationImpl pooled thread 5925] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:01:59.340 [ApplicationImpl pooled thread 5925] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:09:12.986 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - junit
+01:09:12.986 [ApplicationImpl pooled thread 5922] INFO  com.browserstack.utils.Helpers - true
+01:09:12.986 [ApplicationImpl pooled thread 5922] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:09:12.986 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:09:12.986 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:09:12.986 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:14:25.433 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - junit
+01:14:25.433 [ApplicationImpl pooled thread 5922] INFO  com.browserstack.utils.Helpers - true
+01:14:25.435 [ApplicationImpl pooled thread 5922] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:14:25.435 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:14:25.435 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:14:25.435 [ApplicationImpl pooled thread 5922] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:32:08.549 [ApplicationImpl pooled thread 5957] INFO  c.b.l.BrowserStackRunExtension - junit
+01:32:08.549 [ApplicationImpl pooled thread 5957] INFO  com.browserstack.utils.Helpers - true
+01:32:08.550 [ApplicationImpl pooled thread 5957] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:32:08.550 [ApplicationImpl pooled thread 5957] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:32:08.550 [ApplicationImpl pooled thread 5957] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:32:08.550 [ApplicationImpl pooled thread 5957] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:34:12.236 [ApplicationImpl pooled thread 5955] INFO  c.b.l.BrowserStackRunExtension - junit
+01:34:12.236 [ApplicationImpl pooled thread 5955] INFO  com.browserstack.utils.Helpers - true
+01:34:12.236 [ApplicationImpl pooled thread 5955] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:34:12.236 [ApplicationImpl pooled thread 5955] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:34:12.236 [ApplicationImpl pooled thread 5955] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:34:12.236 [ApplicationImpl pooled thread 5955] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:43:33.708 [ApplicationImpl pooled thread 5968] INFO  c.b.l.BrowserStackRunExtension - junit
+01:43:33.708 [ApplicationImpl pooled thread 5968] INFO  com.browserstack.utils.Helpers - true
+01:43:33.709 [ApplicationImpl pooled thread 5968] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:43:33.709 [ApplicationImpl pooled thread 5968] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:43:33.709 [ApplicationImpl pooled thread 5968] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:43:33.709 [ApplicationImpl pooled thread 5968] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:47:50.251 [ApplicationImpl pooled thread 5971] INFO  c.b.l.BrowserStackRunExtension - junit
+01:47:50.251 [ApplicationImpl pooled thread 5971] INFO  com.browserstack.utils.Helpers - true
+01:47:50.251 [ApplicationImpl pooled thread 5971] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:47:50.251 [ApplicationImpl pooled thread 5971] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:47:50.252 [ApplicationImpl pooled thread 5971] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:47:50.252 [ApplicationImpl pooled thread 5971] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+01:57:27.219 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - junit
+01:57:27.219 [ApplicationImpl pooled thread 5983] INFO  com.browserstack.utils.Helpers - true
+01:57:27.219 [ApplicationImpl pooled thread 5983] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:57:27.219 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+01:57:27.219 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+01:57:27.219 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+02:00:24.658 [ApplicationImpl pooled thread 5989] INFO  c.b.l.BrowserStackRunExtension - junit
+02:00:24.659 [ApplicationImpl pooled thread 5989] INFO  com.browserstack.utils.Helpers - true
+02:00:24.659 [ApplicationImpl pooled thread 5989] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:00:24.659 [ApplicationImpl pooled thread 5989] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:00:24.659 [ApplicationImpl pooled thread 5989] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+02:00:24.659 [ApplicationImpl pooled thread 5989] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+02:02:57.419 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - junit
+02:02:57.419 [ApplicationImpl pooled thread 5983] INFO  com.browserstack.utils.Helpers - true
+02:02:57.420 [ApplicationImpl pooled thread 5983] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:02:57.420 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:02:57.420 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+02:02:57.420 [ApplicationImpl pooled thread 5983] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+02:06:07.001 [ApplicationImpl pooled thread 5990] INFO  c.b.l.BrowserStackRunExtension - junit
+02:06:07.001 [ApplicationImpl pooled thread 5990] INFO  com.browserstack.utils.Helpers - true
+02:06:07.002 [ApplicationImpl pooled thread 5990] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:06:07.002 [ApplicationImpl pooled thread 5990] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:06:07.002 [ApplicationImpl pooled thread 5990] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+02:06:07.002 [ApplicationImpl pooled thread 5990] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+02:07:15.357 [ApplicationImpl pooled thread 12] INFO  c.b.l.BrowserStackRunExtension - junit
+02:07:15.358 [ApplicationImpl pooled thread 12] INFO  com.browserstack.utils.Helpers - true
+02:07:15.358 [ApplicationImpl pooled thread 12] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:07:15.358 [ApplicationImpl pooled thread 12] INFO  c.b.l.BrowserStackRunExtension - Agent path: /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:07:15.358 [ApplicationImpl pooled thread 12] INFO  c.b.l.BrowserStackRunExtension - Adding Browserstack SDK javaagent argline
+02:07:15.359 [ApplicationImpl pooled thread 12] INFO  c.b.l.BrowserStackRunExtension - Plugin version: v1.1.6
+02:07:36.380 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+02:07:36.381 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:07:36.381 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+02:07:36.387 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+02:07:36.387 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:07:36.387 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+02:07:39.787 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+02:07:39.788 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+02:07:39.788 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+02:07:39.794 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Disabling BrowserStack Run
+02:07:39.794 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - setting browserstack enabled to false
+02:08:04.501 [ApplicationImpl pooled thread 22] INFO  c.b.l.BrowserStackRunExtension - junit
+02:08:04.502 [ApplicationImpl pooled thread 22] INFO  com.browserstack.utils.Helpers - false
+02:10:03.261 [ApplicationImpl pooled thread 26] INFO  c.b.l.BrowserStackRunExtension - junit
+02:10:03.261 [ApplicationImpl pooled thread 26] INFO  com.browserstack.utils.Helpers - false
+02:14:12.058 [ApplicationImpl pooled thread 38] INFO  c.b.l.BrowserStackRunExtension - junit
+02:14:12.059 [ApplicationImpl pooled thread 38] INFO  com.browserstack.utils.Helpers - false
+02:16:38.993 [ApplicationImpl pooled thread 52] INFO  c.b.l.BrowserStackRunExtension - junit
+02:16:38.993 [ApplicationImpl pooled thread 52] INFO  com.browserstack.utils.Helpers - false
+02:18:28.534 [ApplicationImpl pooled thread 53] INFO  c.b.l.BrowserStackRunExtension - junit
+02:18:28.534 [ApplicationImpl pooled thread 53] INFO  com.browserstack.utils.Helpers - false
+02:21:01.452 [ApplicationImpl pooled thread 54] INFO  c.b.l.BrowserStackRunExtension - junit
+02:21:01.452 [ApplicationImpl pooled thread 54] INFO  com.browserstack.utils.Helpers - false
+02:22:33.680 [ApplicationImpl pooled thread 52] INFO  c.b.l.BrowserStackRunExtension - junit
+02:22:33.680 [ApplicationImpl pooled thread 52] INFO  com.browserstack.utils.Helpers - false
+02:25:41.169 [ApplicationImpl pooled thread 61] INFO  c.b.l.BrowserStackRunExtension - junit
+02:25:41.169 [ApplicationImpl pooled thread 61] INFO  com.browserstack.utils.Helpers - false
+02:28:33.025 [ApplicationImpl pooled thread 65] INFO  c.b.l.BrowserStackRunExtension - junit
+02:28:33.025 [ApplicationImpl pooled thread 65] INFO  com.browserstack.utils.Helpers - false
+02:31:03.568 [ApplicationImpl pooled thread 65] INFO  c.b.l.BrowserStackRunExtension - junit
+02:31:03.569 [ApplicationImpl pooled thread 65] INFO  com.browserstack.utils.Helpers - false
+02:32:02.597 [ApplicationImpl pooled thread 59] INFO  c.b.l.BrowserStackRunExtension - junit
+02:32:02.598 [ApplicationImpl pooled thread 59] INFO  com.browserstack.utils.Helpers - false
+02:35:51.426 [ApplicationImpl pooled thread 75] INFO  c.b.l.BrowserStackRunExtension - junit
+02:35:51.426 [ApplicationImpl pooled thread 75] INFO  com.browserstack.utils.Helpers - false
+02:36:44.961 [ApplicationImpl pooled thread 76] INFO  c.b.l.BrowserStackRunExtension - junit
+02:36:44.961 [ApplicationImpl pooled thread 76] INFO  com.browserstack.utils.Helpers - false
+02:43:28.256 [ApplicationImpl pooled thread 85] INFO  c.b.l.BrowserStackRunExtension - junit
+02:43:28.256 [ApplicationImpl pooled thread 85] INFO  com.browserstack.utils.Helpers - false
+02:44:25.556 [ApplicationImpl pooled thread 73] INFO  c.b.l.BrowserStackRunExtension - junit
+02:44:25.556 [ApplicationImpl pooled thread 73] INFO  com.browserstack.utils.Helpers - false
+02:47:07.197 [ApplicationImpl pooled thread 92] INFO  c.b.l.BrowserStackRunExtension - junit
+02:47:07.197 [ApplicationImpl pooled thread 92] INFO  com.browserstack.utils.Helpers - false
+02:48:52.867 [ApplicationImpl pooled thread 94] INFO  c.b.l.BrowserStackRunExtension - junit
+02:48:52.867 [ApplicationImpl pooled thread 94] INFO  com.browserstack.utils.Helpers - false

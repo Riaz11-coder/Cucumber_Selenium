@@ -1,10 +1,12 @@
 package stepDefinitions;
 
 import cucumber.TestContext;
-import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
-import io.cucumber.java.Scenario;
+import io.cucumber.java.*;
+import org.junit.BeforeClass;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 
 public class Hooks {
@@ -20,6 +22,8 @@ public class Hooks {
         // Setup operations before each test
     }
 
+
+
     @AfterStep()
     public void addScreenshot(Scenario scenario){testContext.getWebDriverManager().getScreenShot(scenario);
     }
@@ -32,6 +36,6 @@ public class Hooks {
         System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
         System.out.println("scenario.isFailed() = " + scenario.isFailed());
 
-        testContext.getWebDriverManager().closeDriver();
+        TestContext.reset();
     }
 }

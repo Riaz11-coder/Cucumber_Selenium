@@ -5,3 +5,8 @@ Feature: As a user I should be able to search Google and navigate to the page I 
     Given I navigate to Google search page
     When I search for a web site
     Then I should be able to navigate there
+  @Google2
+  Scenario: Testing Google
+    Given I navigate to Google search page
+    When  I check page title
+    Then  I have page title assertion

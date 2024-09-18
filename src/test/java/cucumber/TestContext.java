@@ -30,8 +30,7 @@ public class TestContext {
         return instance;
     }
 
-    public DriverManager getWebDriverManager() {
-        return driverManager;
+    public DriverManager getWebDriverManager() {return driverManager;
     }
 
     public PageObjectManager getPageObjectManager() {

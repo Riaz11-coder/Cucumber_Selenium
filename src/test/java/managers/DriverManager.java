@@ -45,7 +45,7 @@ public class DriverManager {
     }
 
     public WebDriver getDriver() {
-        if (driver.get() == null) {
+        if (driver.get() == null || ((RemoteWebDriver) driver.get()).getSessionId() == null) {
             driver.set(createDriver());
         }
         return driver.get();

@@ -15,7 +15,7 @@ public class Google {
 
     BrowserUtils browserUtils;
 
-    public Google(TestContext context){
+    public Google(){
         testContext = TestContext.getInstance();
         googlepage = testContext.getPageObjectManager().getGooglePage();
         browserUtils = testContext.getPageObjectManager().getBrowserUtils();
@@ -46,6 +46,6 @@ public class Google {
     @Then("I should be able to navigate there")
     public void iShouldBeAbleToNavigateThere() {
         googlepage.searchPageTitleValidation();
-        System.out.println("ngrok test");
+
     }
 }
