@@ -306,7 +306,6 @@ public class BrowserUtils   {
     public void highlight(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
         waitFor(1);
-        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');", element);
     }
 
     /**

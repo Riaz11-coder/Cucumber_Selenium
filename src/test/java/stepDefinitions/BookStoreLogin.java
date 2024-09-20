@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 import pageObjects.LoginPage;
 import utilities.BrowserUtils;
 
-import java.io.IOException;
 
 public class BookStoreLogin {
 

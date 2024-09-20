@@ -1,11 +1,9 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import pageObjects.BookStorePage;
 import pageObjects.GooglePage;
 import pageObjects.LoginPage;
-import stepDefinitions.BookStoreLogin;
 import utilities.BrowserUtils;
 
 public class PageObjectManager {

@@ -1482,3 +1482,120 @@
 02:07:25.482 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
 02:08:12.550 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/cdc37504389391dae0e621f472cf6f7cc678cbce
 02:08:12.551 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+18:56:53.901 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+18:56:53.904 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:56:54.123 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:56:54.125 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:56:55.123 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+18:56:57.424 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:56:57.778 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+18:57:02.976 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:57:02.977 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:57:02.978 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:57:02.981 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:57:02.983 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:57:02.983 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:57:02.979 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:57:02.993 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:57:02.992 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:57:02.997 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:57:05.062 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:57:05.062 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:57:05.064 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:57:05.065 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:57:05.084 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:58:14.345 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/a77b9d61fa93fb911bdc5d90298292e04c5e5e61
+18:58:14.345 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+18:58:50.337 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+18:58:50.339 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+18:58:50.514 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:58:50.515 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:58:51.342 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+18:58:53.452 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:58:54.622 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:58:54.627 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:58:54.628 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:58:54.629 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:58:54.634 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:58:54.636 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:58:54.643 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:58:54.643 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+18:58:54.648 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:58:54.650 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+18:58:56.564 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:58:56.580 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:58:56.583 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:58:56.604 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+18:58:56.647 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:00:01.276 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/6c0895b256ed245ad0938a1cc82575c137f1334d
+19:00:01.276 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+19:05:27.428 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+19:05:27.431 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+19:05:27.605 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:05:27.607 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:05:28.451 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+19:05:30.938 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:05:32.072 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:05:32.072 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:05:32.076 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:05:32.077 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:05:32.075 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:05:32.080 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:05:32.083 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:05:32.087 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:05:32.090 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:05:32.094 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:05:34.113 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:05:34.136 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:05:34.176 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:05:34.211 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:05:34.220 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:06:44.429 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/610d9c6ca2bbd116243f41bfcd449bc02fe44cb6
+19:06:44.430 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+19:16:14.286 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+19:16:14.289 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+19:16:14.470 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:16:14.472 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:16:15.469 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+19:16:17.673 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:16:18.012 [main] INFO  c.browserstack.BrowserStackJavaAgent - Starting BrowserStack Local......
+19:16:22.482 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:16:22.483 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:16:22.490 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:16:22.490 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:16:22.489 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:16:22.495 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:16:22.496 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:16:22.501 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:16:22.504 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+19:16:22.510 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+19:16:24.426 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:16:24.435 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:16:24.471 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:16:24.472 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:16:24.497 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+19:17:37.027 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/acdd0af8546a61618c570a231e57eada034ee26e
+19:17:37.028 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+20:19:12.213 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+20:19:12.216 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+20:19:12.410 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:19:12.411 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+20:19:13.341 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to junit4
+20:19:15.705 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+20:19:16.992 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:19:16.997 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+20:19:16.997 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:19:17.001 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+20:19:17.001 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:19:17.004 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+20:19:17.008 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:19:17.012 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+20:19:17.012 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {}
+20:19:17.016 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : /Users/riazahmed/IdeaProjects/Cucumber_Selenium/browserstack.yml
+20:19:19.001 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+20:19:19.001 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+20:19:19.004 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+20:19:19.063 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+20:19:19.063 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+20:20:26.645 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/9b08d299287be0615ad6762222ba19bcfafea8d6
+20:20:26.646 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO

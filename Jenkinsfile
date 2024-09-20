@@ -1,8 +1,11 @@
 pipeline {
+
     agent any
+
     tools {
         maven 'Maven_3'
     }
+
     stages {
         stage('Checkout Repos') {
             steps {
@@ -23,27 +26,24 @@ pipeline {
 
         stage('Build and Test UI Layer') {
             steps {
-                   catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                       sh 'mvn clean test -Dcucumber.options="--tags ~@ignore"'
-                   }
+                //browsestack credentials wrapped
+                browserstack(credentialsId: 'c3dc1acf-10ce-4eb8-b7d3-3b4d44a21889') {
+                    // Run tests using Maven
+                    sh 'mvn clean test -Dmaven.test.failure.ignore=true || (echo "UI Layer tests failed"; exit 1)'
+                }
             }
             post {
                 always {
                     junit '**/target/surefire-reports/*.xml'
-                    cucumber buildStatus: 'UNSTABLE',
-                    fileIncludePattern: '**/cucumber.json',
-                    jsonReportDirectory: 'target'
                 }
             }
         }
 
         stage('Build and Test API Layer') {
             steps {
-                    catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                        dir('ApiLayer') {
-                            sh 'mvn clean test -Dcucumber.options="--tags ~@ignore"'
-                        }
-                    }
+                dir('ApiLayer') {
+                    sh 'mvn clean test -Dmaven.test.failure.ignore=true || (echo "API Layer tests failed"; exit 1)'
+                }
             }
             post {
                 always {
@@ -54,32 +54,25 @@ pipeline {
 
         stage('Build and Test Database Layer') {
             steps {
-                    catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
-                        dir('DatabaseLayer') {
-                            sh 'mvn clean test'
-                        }
-                    }
-            Z}
+                dir('DatabaseLayer') {
+                    sh 'mvn clean test -Dmaven.test.failure.ignore=true || (echo "Database Layer tests failed"; exit 1)'
+                }
+            }
             post {
                 always {
                     junit '**/target/surefire-reports/*.xml'
                 }
             }
         }
-        stage('Generate Cucumber Reports') {
-                   steps {
-                       cucumber buildStatus: 'UNSTABLE',
-                                fileIncludePattern: '**/cucumber.json',
-                                jsonReportDirectory: 'target'
-                    }
-
-         }
     }
 
     post {
         always {
-            // Clean up workspace after build
+            browserStackReportPublisher 'automate'
             cleanWs()
+        }
+        failure {
+            echo 'The pipeline failed. Please check the console output for details.'
         }
     }
 }

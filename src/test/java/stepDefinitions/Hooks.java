@@ -2,11 +2,6 @@ package stepDefinitions;
 
 import cucumber.TestContext;
 import io.cucumber.java.*;
-import org.junit.BeforeClass;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
 
 
 public class Hooks {

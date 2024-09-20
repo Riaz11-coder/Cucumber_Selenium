@@ -6,13 +6,14 @@ import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 
 import dataProvider.YamlConfigReader;
 
@@ -21,6 +22,10 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+
+
+
 
 public class DriverManager {
     private static final Logger logger = LoggerFactory.getLogger(DriverManager.class);
@@ -77,65 +82,77 @@ public class DriverManager {
         }
     }
 
-    private ChromeOptions createChromeOptions(boolean headless) {
-        ChromeOptions options = new ChromeOptions();
-        if (headless) {
-            options.addArguments("--headless"); // Set Chrome to run in headless mode
-        }
-        // You can add more Chrome options here if needed
-        return options;
-    }
 
 
     private WebDriver createLocalDriver() {
         logger.info("Creating local driver for browser: {}", driverType);
+        WebDriver localDriver;
         switch (driverType) {
             case FIREFOX:
                 WebDriverManager.firefoxdriver().setup();
-                return new FirefoxDriver();
+                localDriver = new FirefoxDriver();
+                break;
             case CHROME:
                 WebDriverManager.chromedriver().setup();
-                return new ChromeDriver();
+                localDriver = new ChromeDriver();
+                break;
             case EDGE:
                 WebDriverManager.edgedriver().setup();
-                return new EdgeDriver();
+                localDriver = new EdgeDriver();
+                break;
+            case SAFARI:
+                WebDriverManager.safaridriver().setup();
+                localDriver = new SafariDriver();
+                break;
             default:
                 throw new RuntimeException("Unsupported driver type: " + driverType);
         }
+
+        long implicitWaitTime = FileReaderManager.getInstance().getConfigReader().getImplicitlyWait();
+        localDriver.manage().timeouts().implicitlyWait(implicitWaitTime, TimeUnit.SECONDS);
+
+        return localDriver;
     }
+
+
     private WebDriver createBrowserStackDriver() {
-
         List<Map<String, Object>> allPlatforms = yamlConfigReader.getAllPlatforms();
-        Map<String, Object> platform = allPlatforms.get(0);
 
-        MutableCapabilities capabilities = new MutableCapabilities();
-        capabilities.setCapability("browserName", platform.get("browserName"));
-        capabilities.setCapability("browserVersion", platform.get("browserVersion"));
-        capabilities.setCapability("os", platform.get("os"));
-        capabilities.setCapability("osVersion", platform.get("osVersion"));
+        for (Map<String, Object> platform : allPlatforms) {
+            MutableCapabilities capabilities = new MutableCapabilities();
+            capabilities.setCapability("browserName", platform.get("browserName"));
+            capabilities.setCapability("browserVersion", platform.get("browserVersion"));
+            capabilities.setCapability("os", platform.get("os"));
+            capabilities.setCapability("osVersion", platform.get("osVersion"));
 
+            HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
+            browserstackOptions.put("userName", yamlConfigReader.getUserName());
+            browserstackOptions.put("accessKey", yamlConfigReader.getAccessKey());
+            browserstackOptions.put("projectName", yamlConfigReader.getProjectName());
+            browserstackOptions.put("buildName", yamlConfigReader.getBuildName());
+            browserstackOptions.put("sessionName", "BStack-[Java] Sample Test");
+            capabilities.setCapability("bstack:options", browserstackOptions);
 
-        HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
-        browserstackOptions.put("userName", yamlConfigReader.getUserName());
-        browserstackOptions.put("accessKey", yamlConfigReader.getAccessKey());
-        browserstackOptions.put("projectName", yamlConfigReader.getProjectName());
-        browserstackOptions.put("buildName", yamlConfigReader.getBuildName());
-        browserstackOptions.put("sessionName", "BStack-[CucumberSelenium] CrossBrowserTest");
-        capabilities.setCapability("bstack:options", browserstackOptions);
-
-        try {
-            return new RemoteWebDriver(
-                    new URL("https://hub-cloud.browserstack.com/wd/hub"), capabilities);
-        } catch (MalformedURLException e) {
-            throw new RuntimeException("Failed to create BrowserStack driver", e);
+            try {
+                return new RemoteWebDriver(
+                        new URL("https://hub-cloud.browserstack.com/wd/hub"), capabilities);
+            } catch (MalformedURLException e) {
+                logger.error("Failed to create BrowserStack driver for platform: {}", platform, e);
+                // Continue to the next platform if this one fails
+            }
         }
+
+        throw new RuntimeException("Failed to create BrowserStack driver for any platform");
     }
+
+
     public void closeDriver() {
-        WebDriver webDriver = driver.get();
-        if (webDriver != null) {
-            logger.info("Closing driver");
-            webDriver.quit();
-            driver.remove();
+            WebDriver webDriver = driver.get();
+            if (webDriver != null) {
+                logger.info("Closing driver");
+                webDriver.quit();
+                driver.remove();
+            }
         }
-    }
+
 }

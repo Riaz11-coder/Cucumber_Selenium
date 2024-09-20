@@ -4,7 +4,6 @@ import org.junit.Test;
 import utilities.ExcelUtil;
 
 import java.io.IOException;
-import java.util.Arrays;
 
 public class ExcelTests extends ExcelUtil {
 
