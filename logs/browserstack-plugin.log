@@ -681,3 +681,9 @@
 20:35:32.777 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
 20:35:32.777 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
 20:35:32.777 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+21:35:11.017 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+21:35:11.019 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+21:35:11.019 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+21:35:11.022 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+21:35:11.023 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - /Users/riazahmed/.m2/repository/com/browserstack/browserstack-java-sdk/1.23.4/browserstack-java-sdk-1.23.4.jar
+21:35:11.023 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
