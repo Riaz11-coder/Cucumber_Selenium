@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.BookStorePage;
 import pageObjects.GooglePage;
 import pageObjects.LoginPage;
+import pageObjects.ShadowDOMPage;
 import utilities.BrowserUtils;
 
 public class PageObjectManager {
@@ -13,6 +14,7 @@ public class PageObjectManager {
     private GooglePage googlePage;
     private LoginPage loginPage;
     private BookStorePage bookStorePage;
+    private ShadowDOMPage ShadowDOMPage;
 
     public PageObjectManager(WebDriver driver) {
                 this.driver = driver;
@@ -31,4 +33,6 @@ public class PageObjectManager {
     public BrowserUtils getBrowserUtils(){
         return (browserUtils == null) ? browserUtils = new BrowserUtils(driver) : browserUtils;
     }
+
+    public ShadowDOMPage getShadowDOMPage()  {return (ShadowDOMPage == null ) ? ShadowDOMPage = new ShadowDOMPage(driver) : ShadowDOMPage;}
 }
