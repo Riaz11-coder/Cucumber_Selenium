@@ -81,6 +81,21 @@ public class BrowserUtils   {
         }
         return elemTexts;
     }
+    public WebElement getShadowElement(String shadowHostSelector, String shadowElementSelector) {
+        // Locate the shadow host element
+        WebElement shadowHost = driver.findElement(By.cssSelector(shadowHostSelector));
+
+        // Access the shadow root using JavaScriptExecutor
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        // Retrieve the shadow root and query the shadow DOM for the element
+        WebElement shadowElement = (WebElement) js.executeScript(
+                "return arguments[0].shadowRoot.querySelector(arguments[1])",
+                shadowHost, shadowElementSelector
+        );
+
+        return shadowElement;
+    }
 
     /**
      * Extracts text from list of elements matching the provided locator into new List<String>

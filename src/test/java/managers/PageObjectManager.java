@@ -1,10 +1,7 @@
 package managers;
 
 import org.openqa.selenium.WebDriver;
-import pageObjects.BookStorePage;
-import pageObjects.GooglePage;
-import pageObjects.LoginPage;
-import pageObjects.ShadowDOMPage;
+import pageObjects.*;
 import utilities.BrowserUtils;
 
 public class PageObjectManager {
@@ -15,6 +12,7 @@ public class PageObjectManager {
     private LoginPage loginPage;
     private BookStorePage bookStorePage;
     private ShadowDOMPage ShadowDOMPage;
+    private ShadowDom2Page ShadowDom2Page;
 
     public PageObjectManager(WebDriver driver) {
                 this.driver = driver;
@@ -35,4 +33,6 @@ public class PageObjectManager {
     }
 
     public ShadowDOMPage getShadowDOMPage()  {return (ShadowDOMPage == null ) ? ShadowDOMPage = new ShadowDOMPage(driver) : ShadowDOMPage;}
+
+    public ShadowDom2Page getShadowDom2Page(){return (ShadowDom2Page == null) ? ShadowDom2Page = new ShadowDom2Page(driver) : ShadowDom2Page;}
 }
