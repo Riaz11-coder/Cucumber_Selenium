@@ -760,3 +760,5 @@
 15:56:56.284 [ApplicationImpl pooled thread 5138] INFO  com.browserstack.utils.Helpers - false
 15:58:04.069 [ApplicationImpl pooled thread 5128] INFO  c.b.l.BrowserStackRunExtension - junit
 15:58:04.069 [ApplicationImpl pooled thread 5128] INFO  com.browserstack.utils.Helpers - false
+17:49:27.884 [ApplicationImpl pooled thread 5444] INFO  c.b.l.BrowserStackRunExtension - junit
+17:49:27.884 [ApplicationImpl pooled thread 5444] INFO  com.browserstack.utils.Helpers - false

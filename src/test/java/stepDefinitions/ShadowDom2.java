@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import cucumber.TestContext;
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
@@ -8,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import pageObjects.ShadowDOMPage;
 import pageObjects.ShadowDom2Page;
 import utilities.BrowserUtils;
+
+import static org.junit.Assert.assertEquals;
 
 public class ShadowDom2 {
 
@@ -21,22 +24,21 @@ public class ShadowDom2 {
         ShadowDom2Page = testContext.getPageObjectManager().getShadowDom2Page();
         browserUtils = testContext.getPageObjectManager().getBrowserUtils();
     }
-    @When("I interact with Shadow Dom element")
-    public void iInteractWithShadowDomElement() {
-        ShadowDom2Page.navigateToShadowDOM2HomePage();
+
+    @Given("I navigate to the Expand Practice page")
+    public void iNavigateToTheExpandPracticePage() {
+        ShadowDom2Page.navigateToShadowDomPage();
     }
 
-    @Then("I get text and validate")
-    public void iGetTextAndValidate() {
-        // Access the shadow DOM element
-        WebElement element = browserUtils.getShadowElement("#shadow-host", "#my-btn");
+    @When("I initialize the shadow element")
+    public void iInitializeTheShadowElement() {
+        ShadowDom2Page.initializeShadowElement();
+    }
 
-        // Perform some interaction with the element (e.g., click, get text)
-        System.out.println("Text inside the shadow DOM element: " + element.getText());
-
-        String actualText = element.getText();
-        String expectedText = "This button is inside a Shadow DOM.";
-
-        Assert.assertEquals(actualText,expectedText);
+    @Then("I should see the text {string} in the button")
+    public void iShouldSeeTheTextInTheButton(String expectedText) {
+        String actualText = ShadowDom2Page.getButtonText();
+        assertEquals(expectedText, actualText);
+        System.out.println("Button text inside the shadow DOM element: " + actualText);
     }
 }

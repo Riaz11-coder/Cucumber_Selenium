@@ -20,7 +20,7 @@ import java.util.Properties;
                 "listeners.TestFailureListener"},
         monochrome = true,
         dryRun = false,
-        tags = "@ShadowDom2"
+        tags = "@ShadowDom"
 )
 public class TestRunner {
 

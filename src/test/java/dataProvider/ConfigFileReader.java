@@ -49,6 +49,25 @@ public class ConfigFileReader {
             else throw new RuntimeException("url not specified in the Configuration.properties file.");
         }
 
+    public String getShadowDomUrl() {
+        String shadowDomUrl = properties.getProperty("shadowDomUrl");
+        if(shadowDomUrl != null) return shadowDomUrl;
+        else throw new RuntimeException("shadowDomUrl not specified in the Configuration.properties file.");
+    }
+
+    public String getShadowDomTwoUrl() {
+        String shadowDomTwoUrl = properties.getProperty("shadowDomTwoUrl");
+        if(shadowDomTwoUrl != null) return shadowDomTwoUrl;
+        else throw new RuntimeException("shadowDomTwoUrl not specified in the Configuration.properties file.");
+    }
+
+    public String getGoogleUrl() {
+        String GoogleUrl = properties.getProperty("GoogleUrl");
+        if(GoogleUrl != null) return GoogleUrl;
+        else throw new RuntimeException("GoogleUrl not specified in the Configuration.properties file.");
+    }
+
+
     public DriverType getBrowser() {
         String browserName = properties.getProperty("browser");
         if(browserName == null || browserName.equals("chrome")) return DriverType.CHROME;

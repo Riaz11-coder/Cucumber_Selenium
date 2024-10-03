@@ -81,7 +81,7 @@ public class BrowserUtils   {
         }
         return elemTexts;
     }
-    public WebElement getShadowElement(String shadowHostSelector, String shadowElementSelector) {
+    public WebElement getShadowElement(WebDriver driver, String shadowHostSelector, String shadowElementSelector) {
         // Locate the shadow host element
         WebElement shadowHost = driver.findElement(By.cssSelector(shadowHostSelector));
 

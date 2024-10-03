@@ -1,47 +1,36 @@
 package pageObjects;
 
+import cucumber.TestContext;
 import managers.FileReaderManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import utilities.BrowserUtils;
 
 public class ShadowDOMPage {
 
     WebDriver driver;
+    WebElement shadowElement;
+    BrowserUtils browserUtils;
+    TestContext testContext;
 
     public ShadowDOMPage(WebDriver driver){
-
+        testContext = TestContext.getInstance();
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        this.browserUtils = testContext.getPageObjectManager().getBrowserUtils();
+        PageFactory.initElements(driver, this);
     }
 
-
-
-
-    public WebElement getShadowElement(String shadowHostSelector, String shadowElementSelector) {
-        // Locate the shadow host element
-        WebElement shadowHost = driver.findElement(By.cssSelector(shadowHostSelector));
-
-        // Access the shadow root using JavaScriptExecutor
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-
-        // Retrieve the shadow root and query the shadow DOM for the element
-        WebElement shadowElement = (WebElement) js.executeScript(
-                "return arguments[0].shadowRoot.querySelector(arguments[1])",
-                shadowHost, shadowElementSelector
-        );
-
-        return shadowElement;
+    public void initializeShadowElement() {
+        shadowElement = browserUtils.getShadowElement(driver, "#content > my-paragraph:nth-child(4)", "p");
     }
-
-
-
     public void navigateToShadowDOMHomePage(){
-        driver.get(FileReaderManager.getInstance().getConfigReader().getApplicationUrl());
-
-
+        driver.get(FileReaderManager.getInstance().getConfigReader().getShadowDomUrl());
+    }
+    public String getShadowElementText() {
+        return shadowElement.getText();
     }
 
 
